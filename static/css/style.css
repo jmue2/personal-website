@@ -1,0 +1,233 @@
+/* general styling */
+
+:root {
+    --primary-color: #101658;
+    --secondary-color: #F8F8F8;
+    --nav-text-color: #393939;
+    --nav-color: #0d1539;
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, sans-serif;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* navbar styling */
+
+.navbar {
+    padding: 20px 0;
+    font-size: 18px;
+    background-color: var(--nav-color);
+    border-bottom: 4px solid black;
+}
+
+.navbar__buttons {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.navbar__button {
+    background-color: var(--secondary-color);
+    color: black;
+    padding: 4px 10px;
+    border: 2px solid black;
+    margin: 5px 0;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar__button:hover {
+    transform: scale(1.1);
+}
+
+/* main styling */
+
+.main {
+    max-width: 600px;
+    margin: 0 auto 72px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.main__header {
+    text-align: center;
+}
+
+.main__headshot {
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.main__text {
+    text-align: center;
+    margin: 0 0 18px;
+}
+
+/* class entry styling */
+
+.entry {
+    margin-bottom: 50px;
+}
+
+.entry__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.entry__title {
+    font-size: 18px;
+    margin: auto 0;
+}
+
+.entry__date {
+    font-size: 18px;
+    margin: auto 0;
+}
+
+.entry__link {
+    color: LightBlue;
+    text-decoration: none;
+}
+
+.entry__content {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 150%;
+    word-wrap: break-word;
+}
+
+
+/* footer styling */
+
+footer {
+    margin-top: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-top: 4px solid black;
+    background-color: var(--nav-color);
+}
+
+.footer__content {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__socials__img {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+/* connect four styling */
+
+#restartBtn {
+    font-size: 19px;
+    font-weight: bold;
+    align-self: center auto;
+    background-color: var(--secondary-color);
+    color: black; /* White text color */
+    padding: 10px 15px;
+    margin: 10px 10px;
+    border: 2px solid var(--border-color);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+#restartBtn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.colBtn {
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    line-height: 35px;
+    color: red;
+    font-family: 'Georgia', serif;
+    border: 2px solid red;
+    font-size: 13px;
+    user-select: none;
+}
+
+.colBtn:hover {
+    cursor: pointer;
+}
+
+#divider {
+    width: 350px;
+    height: 10px;
+}
+
+#gameWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 72px;
+}
+
+#gameboard {
+    width: 400px;
+    border: 2px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    padding: 23px;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    flex: 1;
+}
+.box {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 100px;
+    border: 2px solid;
+}

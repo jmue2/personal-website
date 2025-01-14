@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar__buttons">
+            <a href="/" class="navbar__button">Home</a>
+            <a href="/classes/" class="navbar__button">Classes</a>
+            <a href="https://github.com/jmue2" class="navbar__button">Projects</a>
+            <a href="/resume/" class="navbar__button">Resume</a>
+            <a href="/connect_four/" class="navbar__button">Connect Four</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <h1 class="main__header">Classes I've Taken</h1>
+
+        {% for class in classes %}
+            <article class="entry">
+                <div class="entry__header">
+                    <h2 class="entry__title">{{ class['title'] }}</h2>
+                    <h2 class="entry__date">{{ class['sem_taken'] + ' ' + class['year_taken'] }}</time>
+                </div>
+                <a href="{{ class['link'] }}" class="entry__link">
+                    More info
+                </a>
+                <p class="entry__content">
+                    {{ class['my_thoughts'] }}
+                </p>
+            </article>
+        {% endfor %}
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <p>Made by John Muenning</p>
+            <p>|</p>
+            <p>jmue@bu.edu</p>
+            <p>|</p>
+            <div class="footer__socials">
+                <a href="https://www.linkedin.com/in/john-muenning-702a90221" class="social-link" target="_blank">
+                    <img class="footer__socials__img" src="/static/images/linkedin.png" alt="My LinkedIn">
+                </a>
+                <a href="https://github.com/jmue2" class="social-link" target="_blank">
+                    <img class="footer__socials__img" src="/static/images/github.png" alt="My GitHub">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

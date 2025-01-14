@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Four</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="game">
+
+    <header class="navbar">
+        <div class="navbar__buttons">
+            <a href="/" class="navbar__button">Home</a>
+            <a href="/classes/" class="navbar__button">Classes</a>
+            <a href="https://github.com/jmue2" class="navbar__button">Projects</a>
+            <a href="/resume/" class="navbar__button">Resume</a>
+            <a href="/connect_four/" class="navbar__button">Connect Four</a>
+        </div>
+    </header>
+
+    <div id="gameWrapper">
+        <h1 id="titleText">Connect Four</h1>
+        <h2 id="turnText">Red's turn</h2>
+
+        <button id="restartBtn">Restart</button>
+
+        <div id="gameboard">
+            <div class="colBtn" id="0">Drop</div>
+            <div class="colBtn" id="1">Drop</div>
+            <div class="colBtn" id="2">Drop</div>
+            <div class="colBtn" id="3">Drop</div>
+            <div class="colBtn" id="4">Drop</div>
+            <div class="colBtn" id="5">Drop</div>
+            <div class="colBtn" id="6">Drop</div>
+            <div id="divider"></div>
+            <div class="box" id="0"></div>
+            <div class="box" id="1"></div>
+            <div class="box" id="2"></div>
+            <div class="box" id="3"></div>
+            <div class="box" id="4"></div>
+            <div class="box" id="5"></div>
+            <div class="box" id="6"></div>
+            <div class="box" id="7"></div>
+            <div class="box" id="8"></div>
+            <div class="box" id="9"></div>
+            <div class="box" id="10"></div>
+            <div class="box" id="11"></div>
+            <div class="box" id="12"></div>
+            <div class="box" id="13"></div>
+            <div class="box" id="14"></div>
+            <div class="box" id="15"></div>
+            <div class="box" id="16"></div>
+            <div class="box" id="17"></div>
+            <div class="box" id="18"></div>
+            <div class="box" id="19"></div>
+            <div class="box" id="20"></div>
+            <div class="box" id="21"></div>
+            <div class="box" id="22"></div>
+            <div class="box" id="23"></div>
+            <div class="box" id="24"></div>
+            <div class="box" id="25"></div>
+            <div class="box" id="26"></div>
+            <div class="box" id="27"></div>
+            <div class="box" id="28"></div>
+            <div class="box" id="29"></div>
+            <div class="box" id="30"></div>
+            <div class="box" id="31"></div>
+            <div class="box" id="32"></div>
+            <div class="box" id="33"></div>
+            <div class="box" id="34"></div>
+            <div class="box" id="35"></div>
+            <div class="box" id="36"></div>
+            <div class="box" id="37"></div>
+            <div class="box" id="38"></div>
+            <div class="box" id="39"></div>
+            <div class="box" id="40"></div>
+            <div class="box" id="41"></div>
+        </div>
+    </div>
+
+    <script src="{{url_for('static', filename='connect_four.js')}}"></script>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <p>Made by John Muenning</p>
+            <p>|</p>
+            <p>jmue@bu.edu</p>
+            <p>|</p>
+            <div class="footer__socials">
+                <a href="https://www.linkedin.com/in/john-muenning-702a90221" class="social-link" target="_blank">
+                    <img class="footer__socials__img" src="/static/images/linkedin.png" alt="My LinkedIn">
+                </a>
+                <a href="https://github.com/jmue2" class="social-link" target="_blank">
+                    <img class="footer__socials__img" src="/static/images/github.png" alt="My GitHub">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
